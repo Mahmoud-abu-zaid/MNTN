@@ -185,5 +185,27 @@ flex-direction: row-reverse;
       height: 80vh;
     }
   }
- 
+ footer .continer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+ }
+ footer .continer .mntn{
+  width: 50%;
+ }
+ .copyright{
+  padding-top: 50px;
+ }
+ footer .continer h1 , footer .continer h3{
+  color: var(--jasmine);
+  padding-top: 30px;
+ }
+ .blog  a,.more-mntn a{
+  display: block;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 15px;
+  padding: 10px;
+ }
 
