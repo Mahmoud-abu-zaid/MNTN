@@ -92,8 +92,9 @@ header .continer nav input:checked + ul {
     display: none;
   }
 }
-.hero {
+.hero .content{
   background-image: url(../images/hero.webp);
+  background-attachment: fixed;
   background-size: 100% 100%;
   height: 100vh;
 }
@@ -102,7 +103,6 @@ header .continer nav input:checked + ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 80vh;
 }
 .content .hiking {
   color: var(--jasmine);
@@ -129,16 +129,19 @@ h2 {
   margin-left: 5px;
 }
 .page2 {
-  box-shadow: 100px 100px 100px 200px var(--bg);
+  box-shadow: 100px 100px 100px 230px var(--bg);
 }
 .img {
   width: 400px;
-  height: 500px;
+  height: 400px;
+
 }
 .text {
   width: 400px;
   width: 50%;
   position: relative;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 .numper {
   position: absolute;
@@ -156,3 +159,31 @@ h2 {
 .arrow-right {
   width: 20px;
 }
+.page3,.page4{
+margin-top: 50px;
+}
+.page3  .content{
+flex-direction: row-reverse;
+}
+@media (max-width: 765px) {
+  .hero .content{
+    height: 90vh;
+  }
+}
+@media (max-width: 600px) {
+
+  h2 {
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    width: 200px;
+  }
+  .img {
+    width: 350px;
+    height: 350px;
+    }
+    .hero .content{
+      height: 80vh;
+    }
+  }
+ 
+
