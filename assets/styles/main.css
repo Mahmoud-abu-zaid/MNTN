@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --jasmine: #fbd784;
+  --bg: #0b1d26;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+body {
+  background-color: var(--bg);
+  color: var(--white);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+header .continer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  padding-top: 10px;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+header .continer nav {
+  position: relative;
+}
+header .continer nav ul {
+  display: none;
+  list-style: none;
+}
+
+header .continer nav ul li a {
+  text-decoration: none;
+  padding: 15px;
+  color: var(--white);
+}
+header .continer nav input {
+  appearance: none;
+}
+header .continer nav label {
+  cursor: pointer;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+header .continer nav input:checked + ul {
+  display: block;
+  position: absolute;
+}
+@media (max-width: 992px) {
+  header .continer nav ul {
+    background-color: var(--white);
+  }
+  header .continer nav ul li {
+    text-decoration: none;
+    padding: 10px 5px;
+    color: var(--black);
+    width: 100%;
+    border-bottom: 1px solid var(--black);
+  }
+  header .continer nav ul li a {
+    color: var(--black);
+  }
+}
+@media (min-width: 992px) {
+  header .continer nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header .continer nav input,
+  header .continer nav label img {
+    display: none;
+  }
+}
+.hero {
+  background-image: url(../images/hero.webp);
+  background-size: 100% 100%;
+  height: 100vh;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80vh;
+}
+.content .hiking {
+  color: var(--jasmine);
+  position: relative;
+  padding-left: 60px;
+}
+.content .hiking::after {
+  content: "_____";
+  position: absolute;
+  left: 10px;
+  top: -7px;
+}
+h2 {
+  font-size: 40px;
+  letter-spacing: 0.5px;
+  width: 400px;
+}
+.scroll {
+  font-weight: 500;
+}
+.arrow-dowen {
+  width: 14px;
+  height: 20px;
+  margin-left: 5px;
+}
+.page2 {
+  box-shadow: 100px 100px 100px 200px var(--bg);
+}
+.img {
+  width: 400px;
+  height: 500px;
+}
+.text {
+  width: 400px;
+  width: 50%;
+  position: relative;
+}
+.numper {
+  position: absolute;
+  font-size: 120px;
+  top: -70px;
+  opacity: 0.2;
+}
+.lorem {
+  padding: 25px 0px;
+}
+.read-more {
+  padding-right: 10px;
+  color: var(--jasmine);
+}
+.arrow-right {
+  width: 20px;
+}
